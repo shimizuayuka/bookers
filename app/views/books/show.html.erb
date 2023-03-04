@@ -1,0 +1,15 @@
+<p>
+  <%= flash[:notice] %>
+</p>
+
+<p><strong>Title:</strong>
+<%= @book.title %></p>
+
+<p><strong>Body:</strong>
+<%= @book.body %></p>
+
+<%= link_to "Edit", edit_book_path(@book.id) %>
+ | 
+<a class="back" href="/books">Back</a>
+
+<!-- %= link_to "Destroy", list_path(@list.id), method: :delete, "data-confirm" => "Are you sure？" % -->
